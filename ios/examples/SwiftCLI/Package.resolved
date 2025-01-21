@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "uniffi-spm-sample",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:mh-mobile/UniFFI-SPM-Sample.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "20422629d03cd7cc2e1e22fbb7fd7a2976fb4e38"
+      }
+    }
+  ],
+  "version" : 2
+}
