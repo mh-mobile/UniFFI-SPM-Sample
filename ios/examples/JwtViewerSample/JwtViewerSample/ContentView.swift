@@ -66,7 +66,6 @@ struct ContentView: View {
                         }
                 }
                 
-                
                 if !errorMessage.isEmpty {
                     Text(errorMessage)
                         .foregroundColor(.red)
@@ -106,11 +105,9 @@ struct ContentView: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                   
             }
         }
         .padding()
-            
     }
 }
 
