@@ -4,10 +4,10 @@
 set -e
 
 # Build the dylib
-cargo build
+cargo build --release
 
 # Generate bindings
-cargo run --bin uniffi-bindgen generate --library ./target/debug/libmobile.dylib --language swift --out-dir ./bindings
+cargo run --bin uniffi-bindgen generate --library ./target/release/libmobile.dylib --language swift --out-dir ./bindings
 
 # Add targets and build
 for TARGET in \
