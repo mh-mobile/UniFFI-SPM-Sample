@@ -589,6 +589,150 @@ public func FfiConverterTypeCalculator_lift(_ pointer: UnsafeMutableRawPointer) 
 public func FfiConverterTypeCalculator_lower(_ value: Calculator) -> UnsafeMutableRawPointer {
     return FfiConverterTypeCalculator.lower(value)
 }
+
+
+public struct JwtParts {
+    public var header: String
+    public var payload: String
+
+    // Default memberwise initializers are never public by default, so we
+    // declare one manually.
+    public init(header: String, payload: String) {
+        self.header = header
+        self.payload = payload
+    }
+}
+
+
+
+extension JwtParts: Equatable, Hashable {
+    public static func ==(lhs: JwtParts, rhs: JwtParts) -> Bool {
+        if lhs.header != rhs.header {
+            return false
+        }
+        if lhs.payload != rhs.payload {
+            return false
+        }
+        return true
+    }
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(header)
+        hasher.combine(payload)
+    }
+}
+
+
+#if swift(>=5.8)
+@_documentation(visibility: private)
+#endif
+public struct FfiConverterTypeJwtParts: FfiConverterRustBuffer {
+    public static func read(from buf: inout (data: Data, offset: Data.Index)) throws -> JwtParts {
+        return
+            try JwtParts(
+                header: FfiConverterString.read(from: &buf), 
+                payload: FfiConverterString.read(from: &buf)
+        )
+    }
+
+    public static func write(_ value: JwtParts, into buf: inout [UInt8]) {
+        FfiConverterString.write(value.header, into: &buf)
+        FfiConverterString.write(value.payload, into: &buf)
+    }
+}
+
+
+#if swift(>=5.8)
+@_documentation(visibility: private)
+#endif
+public func FfiConverterTypeJwtParts_lift(_ buf: RustBuffer) throws -> JwtParts {
+    return try FfiConverterTypeJwtParts.lift(buf)
+}
+
+#if swift(>=5.8)
+@_documentation(visibility: private)
+#endif
+public func FfiConverterTypeJwtParts_lower(_ value: JwtParts) -> RustBuffer {
+    return FfiConverterTypeJwtParts.lower(value)
+}
+
+
+public enum JwtError {
+
+    
+    
+    case InvalidFormat(message: String)
+    
+    case Base64Error(message: String)
+    
+    case JsonError(message: String)
+    
+}
+
+
+#if swift(>=5.8)
+@_documentation(visibility: private)
+#endif
+public struct FfiConverterTypeJwtError: FfiConverterRustBuffer {
+    typealias SwiftType = JwtError
+
+    public static func read(from buf: inout (data: Data, offset: Data.Index)) throws -> JwtError {
+        let variant: Int32 = try readInt(&buf)
+        switch variant {
+
+        
+
+        
+        case 1: return .InvalidFormat(
+            message: try FfiConverterString.read(from: &buf)
+        )
+        
+        case 2: return .Base64Error(
+            message: try FfiConverterString.read(from: &buf)
+        )
+        
+        case 3: return .JsonError(
+            message: try FfiConverterString.read(from: &buf)
+        )
+        
+
+        default: throw UniffiInternalError.unexpectedEnumCase
+        }
+    }
+
+    public static func write(_ value: JwtError, into buf: inout [UInt8]) {
+        switch value {
+
+        
+
+        
+        case .InvalidFormat(_ /* message is ignored*/):
+            writeInt(&buf, Int32(1))
+        case .Base64Error(_ /* message is ignored*/):
+            writeInt(&buf, Int32(2))
+        case .JsonError(_ /* message is ignored*/):
+            writeInt(&buf, Int32(3))
+
+        
+        }
+    }
+}
+
+
+extension JwtError: Equatable, Hashable {}
+
+extension JwtError: Foundation.LocalizedError {
+    public var errorDescription: String? {
+        String(reflecting: self)
+    }
+}
+public func decodeJwt(jwt: String)throws  -> JwtParts {
+    return try  FfiConverterTypeJwtParts.lift(try rustCallWithError(FfiConverterTypeJwtError.lift) {
+    uniffi_mobile_fn_func_decode_jwt(
+        FfiConverterString.lower(jwt),$0
+    )
+})
+}
 public func sayHi() -> String {
     return try!  FfiConverterString.lift(try! rustCall() {
     uniffi_mobile_fn_func_say_hi($0
@@ -610,6 +754,9 @@ private var initializationResult: InitializationResult = {
     let scaffolding_contract_version = ffi_mobile_uniffi_contract_version()
     if bindings_contract_version != scaffolding_contract_version {
         return InitializationResult.contractVersionMismatch
+    }
+    if (uniffi_mobile_checksum_func_decode_jwt() != 44560) {
+        return InitializationResult.apiChecksumMismatch
     }
     if (uniffi_mobile_checksum_func_say_hi() != 36564) {
         return InitializationResult.apiChecksumMismatch

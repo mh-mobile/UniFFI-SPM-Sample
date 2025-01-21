@@ -276,6 +276,11 @@ void uniffi_mobile_fn_method_calculator_add(void*_Nonnull ptr, int32_t x, RustCa
 int32_t uniffi_mobile_fn_method_calculator_get_value(void*_Nonnull ptr, RustCallStatus *_Nonnull out_status
 );
 #endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOBILE_FN_FUNC_DECODE_JWT
+#define UNIFFI_FFIDEF_UNIFFI_MOBILE_FN_FUNC_DECODE_JWT
+RustBuffer uniffi_mobile_fn_func_decode_jwt(RustBuffer jwt, RustCallStatus *_Nonnull out_status
+);
+#endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_MOBILE_FN_FUNC_SAY_HI
 #define UNIFFI_FFIDEF_UNIFFI_MOBILE_FN_FUNC_SAY_HI
 RustBuffer uniffi_mobile_fn_func_say_hi(RustCallStatus *_Nonnull out_status
@@ -560,6 +565,12 @@ void ffi_mobile_rust_future_free_void(uint64_t handle
 #ifndef UNIFFI_FFIDEF_FFI_MOBILE_RUST_FUTURE_COMPLETE_VOID
 #define UNIFFI_FFIDEF_FFI_MOBILE_RUST_FUTURE_COMPLETE_VOID
 void ffi_mobile_rust_future_complete_void(uint64_t handle, RustCallStatus *_Nonnull out_status
+);
+#endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOBILE_CHECKSUM_FUNC_DECODE_JWT
+#define UNIFFI_FFIDEF_UNIFFI_MOBILE_CHECKSUM_FUNC_DECODE_JWT
+uint16_t uniffi_mobile_checksum_func_decode_jwt(void
+    
 );
 #endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_MOBILE_CHECKSUM_FUNC_SAY_HI
