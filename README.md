@@ -35,7 +35,8 @@ iOS/macOS向けのRustライブラリで、UniFFIを使用してSwiftバイン�
 │   ├── src/Mobile/        # Swift wrapper (自動生成)
 │   ├── build/             # XCFramework出力
 │   └── examples/          # 使用例
-│       ├── HelloWorldSample/    # SwiftUI + ObservableObject
+│       ├── HelloWorldSample/    # シンプルなgreeting機能
+│       ├── CalculatorSample/    # SwiftUI + ObservableObject計算機
 │       ├── JwtViewerSample/     # エラーハンドリング例
 │       └── SwiftCLI/            # CLIツール例
 └── build-ios.sh           # ビルドスクリプト
@@ -46,6 +47,9 @@ iOS/macOS向けのRustライブラリで、UniFFIを使用してSwiftバイン�
 ### Swift
 ```swift
 import Mobile
+
+// Greeting
+let message = sayHi()
 
 // Calculator
 let calc = Calculator()
