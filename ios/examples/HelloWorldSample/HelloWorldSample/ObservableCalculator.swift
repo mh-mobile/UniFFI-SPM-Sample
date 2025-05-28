@@ -11,12 +11,20 @@ class ObservableCalculator: ObservableObject {
     }
     
     func increment() {
-        calculator.add(x: 1)
-        value = calculator.getValue()
+        do {
+            try calculator.add(x: 1)
+            value = try calculator.getValue()
+        } catch {
+            print("Error incrementing: \(error)")
+        }
     }
     
     func decrement() {
-        calculator.add(x: -1)
-        value = calculator.getValue()
+        do {
+            try calculator.add(x: -1)
+            value = try calculator.getValue()
+        } catch {
+            print("Error decrementing: \(error)")
+        }
     }
 }
