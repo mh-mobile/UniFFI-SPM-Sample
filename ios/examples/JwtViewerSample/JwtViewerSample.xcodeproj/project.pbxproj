@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC68F5C42DE7D8A9009C3061 /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = EC68F5C32DE7D8A9009C3061 /* Mobile */; };
 		ECE1EE112DE7C28300E0F025 /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = ECE1EE102DE7C28300E0F025 /* Mobile */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC68F5C42DE7D8A9009C3061 /* Mobile in Frameworks */,
 				ECE1EE112DE7C28300E0F025 /* Mobile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +81,7 @@
 			name = JwtViewerSample;
 			packageProductDependencies = (
 				ECE1EE102DE7C28300E0F025 /* Mobile */,
+				EC68F5C32DE7D8A9009C3061 /* Mobile */,
 			);
 			productName = JwtViewerSample;
 			productReference = EC4A9E142D3FA4C800D9841F /* JwtViewerSample.app */;
@@ -109,7 +112,7 @@
 			mainGroup = EC4A9E0B2D3FA4C800D9841F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				ECE1EE0F2DE7C28300E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */,
+				EC68F5C22DE7D8A9009C3061 /* XCRemoteSwiftPackageReference "UniFFI-SPM-Sample" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC4A9E152D3FA4C800D9841F /* Products */;
@@ -342,14 +345,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		ECE1EE0F2DE7C28300E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../../v2;
+/* Begin XCRemoteSwiftPackageReference section */
+		EC68F5C22DE7D8A9009C3061 /* XCRemoteSwiftPackageReference "UniFFI-SPM-Sample" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mh-mobile/UniFFI-SPM-Sample.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EC68F5C32DE7D8A9009C3061 /* Mobile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC68F5C22DE7D8A9009C3061 /* XCRemoteSwiftPackageReference "UniFFI-SPM-Sample" */;
+			productName = Mobile;
+		};
 		ECE1EE102DE7C28300E0F025 /* Mobile */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Mobile;

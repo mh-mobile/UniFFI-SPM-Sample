@@ -1,0 +1,15 @@
+{
+  "originHash" : "378ae9b72698a558d0af2869eedec8ae3708f2984f4d6264d33f341f300ed33e",
+  "pins" : [
+    {
+      "identity" : "uniffi-spm-sample",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mh-mobile/UniFFI-SPM-Sample.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d36018ada06a2698304c92e29bc4fffa7c6018ff"
+      }
+    }
+  ],
+  "version" : 3
+}
