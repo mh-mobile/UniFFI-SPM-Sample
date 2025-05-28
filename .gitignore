@@ -120,7 +120,7 @@ fastlane/test_output
 # UniFFI generated files
 ios/src/Mobile/Mobile.swift
 ios/src/Mobile/mobileFFI.h
-ios/build/
+# ios/build/ # SPM用にXCFrameworkを含める
 
 # Build artifacts
 repomix-output.xml
