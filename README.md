@@ -1,6 +1,6 @@
 # UniFFI SPM Sample
 
-iOS/macOS向けのRustライブラリで、UniFFIを使用してSwiftバインディングを生成します。
+RustライブラリをXCFramework化し、Swift Package Managerから利用できるようにしたサンプルプロジェクトです。UniFFIを使用してRust-Swiftバインディングを自動生成します。
 
 ## 機能
 
