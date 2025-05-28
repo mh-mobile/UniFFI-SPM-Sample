@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC4A9E272D3FA4E700D9841F /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = EC4A9E262D3FA4E700D9841F /* Mobile */; };
+		ECE1EE112DE7C28300E0F025 /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = ECE1EE102DE7C28300E0F025 /* Mobile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4A9E272D3FA4E700D9841F /* Mobile in Frameworks */,
+				ECE1EE112DE7C28300E0F025 /* Mobile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				EC4A9E162D3FA4C800D9841F /* JwtViewerSample */,
+				ECE1EE0C2DE7C26700E0F025 /* Frameworks */,
 				EC4A9E152D3FA4C800D9841F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +49,13 @@
 				EC4A9E142D3FA4C800D9841F /* JwtViewerSample.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ECE1EE0C2DE7C26700E0F025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,7 +78,7 @@
 			);
 			name = JwtViewerSample;
 			packageProductDependencies = (
-				EC4A9E262D3FA4E700D9841F /* Mobile */,
+				ECE1EE102DE7C28300E0F025 /* Mobile */,
 			);
 			productName = JwtViewerSample;
 			productReference = EC4A9E142D3FA4C800D9841F /* JwtViewerSample.app */;
@@ -101,7 +109,7 @@
 			mainGroup = EC4A9E0B2D3FA4C800D9841F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EC4A9E252D3FA4E700D9841F /* XCLocalSwiftPackageReference "../../../../v2" */,
+				ECE1EE0F2DE7C28300E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC4A9E152D3FA4C800D9841F /* Products */;
@@ -335,14 +343,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		EC4A9E252D3FA4E700D9841F /* XCLocalSwiftPackageReference "../../../../v2" */ = {
+		ECE1EE0F2DE7C28300E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../../../v2;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EC4A9E262D3FA4E700D9841F /* Mobile */ = {
+		ECE1EE102DE7C28300E0F025 /* Mobile */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Mobile;
 		};

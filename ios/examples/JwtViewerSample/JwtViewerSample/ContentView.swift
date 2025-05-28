@@ -37,10 +37,16 @@ struct ContentView: View {
             }
         } catch JwtError.InvalidFormat {
             errorMessage = "無効なJWTフォーマットです"
-        } catch JwtError.Base64Error(let message) {
-            errorMessage = "Base64デコードエラー: \(message)"
-        } catch JwtError.JsonError(let message) {
-            errorMessage = "JSONパースエラー: \(message)"
+        } catch JwtError.EmptyJwt {
+            errorMessage = "JWTが空です"
+        } catch JwtError.HeaderDecodeError(let message) {
+            errorMessage = "ヘッダーのBase64デコードエラー: \(message)"
+        } catch JwtError.PayloadDecodeError(let message) {
+            errorMessage = "ペイロードのBase64デコードエラー: \(message)"
+        } catch JwtError.HeaderParseError(let message) {
+            errorMessage = "ヘッダーのJSONパースエラー: \(message)"
+        } catch JwtError.PayloadParseError(let message) {
+            errorMessage = "ペイロードのJSONパースエラー: \(message)"
         } catch {
             errorMessage = "予期せぬエラー: \(error.localizedDescription)"
         }
