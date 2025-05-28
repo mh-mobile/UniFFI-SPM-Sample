@@ -7,7 +7,7 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -116,3 +116,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# UniFFI generated files
+ios/src/Mobile/Mobile.swift
+ios/src/Mobile/mobileFFI.h
+ios/bin/
