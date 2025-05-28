@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		ECE1EE2F2DE7C39800E0F025 /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = ECE1EE2E2DE7C39800E0F025 /* Mobile */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		ECA29C712D37F0A600AB64F3 /* HelloWorldSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -27,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECE1EE2F2DE7C39800E0F025 /* Mobile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +73,6 @@
 			);
 			name = HelloWorldSample;
 			packageProductDependencies = (
-				ECE1EE2E2DE7C39800E0F025 /* Mobile */,
 			);
 			productName = HelloWorldSample;
 			productReference = ECA29C712D37F0A600AB64F3 /* HelloWorldSample.app */;
@@ -109,7 +103,6 @@
 			mainGroup = ECA29C682D37F0A600AB64F3;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				ECE1EE2D2DE7C39800E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ECA29C722D37F0A600AB64F3 /* Products */;
@@ -341,20 +334,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		ECE1EE2D2DE7C39800E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../../v2;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		ECE1EE2E2DE7C39800E0F025 /* Mobile */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Mobile;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECA29C692D37F0A600AB64F3 /* Project object */;
 }
