@@ -1,14 +1,14 @@
 //
-//  HelloWorldSampleApp.swift
-//  HelloWorldSample
+//  CalculatorSampleApp.swift
+//  CalculatorSample
 //
-//  Created by mh on 2025/01/29.
+//  Created by mh on 2025/01/15.
 //
 
 import SwiftUI
 
 @main
-struct HelloWorldSampleApp: App {
+struct CalculatorSampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

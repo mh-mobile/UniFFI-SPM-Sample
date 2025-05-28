@@ -7,51 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ECE1EE2F2DE7C39800E0F025 /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = ECE1EE2E2DE7C39800E0F025 /* Mobile */; };
+		ECE1EE1F2DE7C39800E0F025 /* Mobile in Frameworks */ = {isa = PBXBuildFile; productRef = ECE1EE1E2DE7C39800E0F025 /* Mobile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ECA29C712D37F0A600AB64F3 /* HelloWorldSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA29B712D37F0A600AB64F3 /* CalculatorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		ECA29C732D37F0A600AB64F3 /* HelloWorldSample */ = {
+		ECA29B732D37F0A600AB64F3 /* CalculatorSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HelloWorldSample;
+			path = CalculatorSample;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ECA29C6E2D37F0A600AB64F3 /* Frameworks */ = {
+		ECA29B6E2D37F0A600AB64F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECE1EE2F2DE7C39800E0F025 /* Mobile in Frameworks */,
+				ECE1EE1F2DE7C39800E0F025 /* Mobile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ECA29C682D37F0A600AB64F3 = {
+		ECA29B682D37F0A600AB64F3 = {
 			isa = PBXGroup;
 			children = (
-				ECA29C732D37F0A600AB64F3 /* HelloWorldSample */,
-				ECA29C822D37F17B00AB64F3 /* Frameworks */,
-				ECA29C722D37F0A600AB64F3 /* Products */,
+				ECA29B732D37F0A600AB64F3 /* CalculatorSample */,
+				ECA29B822D37F17B00AB64F3 /* Frameworks */,
+				ECA29B722D37F0A600AB64F3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ECA29C722D37F0A600AB64F3 /* Products */ = {
+		ECA29B722D37F0A600AB64F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECA29C712D37F0A600AB64F3 /* HelloWorldSample.app */,
+				ECA29B712D37F0A600AB64F3 /* CalculatorSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECA29C822D37F17B00AB64F3 /* Frameworks */ = {
+		ECA29B822D37F17B00AB64F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -61,68 +61,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ECA29C702D37F0A600AB64F3 /* HelloWorldSample */ = {
+		ECA29B702D37F0A600AB64F3 /* CalculatorSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECA29C7F2D37F0A700AB64F3 /* Build configuration list for PBXNativeTarget "HelloWorldSample" */;
+			buildConfigurationList = ECA29B7F2D37F0A700AB64F3 /* Build configuration list for PBXNativeTarget "CalculatorSample" */;
 			buildPhases = (
-				ECA29C6D2D37F0A600AB64F3 /* Sources */,
-				ECA29C6E2D37F0A600AB64F3 /* Frameworks */,
-				ECA29C6F2D37F0A600AB64F3 /* Resources */,
+				ECA29B6D2D37F0A600AB64F3 /* Sources */,
+				ECA29B6E2D37F0A600AB64F3 /* Frameworks */,
+				ECA29B6F2D37F0A600AB64F3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				ECA29C732D37F0A600AB64F3 /* HelloWorldSample */,
+				ECA29B732D37F0A600AB64F3 /* CalculatorSample */,
 			);
-			name = HelloWorldSample;
+			name = CalculatorSample;
 			packageProductDependencies = (
-				ECE1EE2E2DE7C39800E0F025 /* Mobile */,
+				ECE1EE1E2DE7C39800E0F025 /* Mobile */,
 			);
-			productName = HelloWorldSample;
-			productReference = ECA29C712D37F0A600AB64F3 /* HelloWorldSample.app */;
+			productName = CalculatorSample;
+			productReference = ECA29B712D37F0A600AB64F3 /* CalculatorSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ECA29C692D37F0A600AB64F3 /* Project object */ = {
+		ECA29B692D37F0A600AB64F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					ECA29C702D37F0A600AB64F3 = {
+					ECA29B702D37F0A600AB64F3 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = ECA29C6C2D37F0A600AB64F3 /* Build configuration list for PBXProject "HelloWorldSample" */;
+			buildConfigurationList = ECA29B6C2D37F0A600AB64F3 /* Build configuration list for PBXProject "CalculatorSample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = ECA29C682D37F0A600AB64F3;
+			mainGroup = ECA29B682D37F0A600AB64F3;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				ECE1EE2D2DE7C39800E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */,
+				ECE1EE1D2DE7C39800E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = ECA29C722D37F0A600AB64F3 /* Products */;
+			productRefGroup = ECA29B722D37F0A600AB64F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECA29C702D37F0A600AB64F3 /* HelloWorldSample */,
+				ECA29B702D37F0A600AB64F3 /* CalculatorSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ECA29C6F2D37F0A600AB64F3 /* Resources */ = {
+		ECA29B6F2D37F0A600AB64F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,7 +132,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ECA29C6D2D37F0A600AB64F3 /* Sources */ = {
+		ECA29B6D2D37F0A600AB64F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,7 +142,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		ECA29C7D2D37F0A700AB64F3 /* Debug */ = {
+		ECA29B7D2D37F0A700AB64F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		ECA29C7E2D37F0A700AB64F3 /* Release */ = {
+		ECA29B7E2D37F0A700AB64F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,14 +261,14 @@
 			};
 			name = Release;
 		};
-		ECA29C802D37F0A700AB64F3 /* Debug */ = {
+		ECA29B802D37F0A700AB64F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HelloWorldSample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CalculatorSample/Preview Content\"";
 				DEVELOPMENT_TEAM = 5XJ8CR95CK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -282,7 +282,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.mh.HelloWorldSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.mh.CalculatorSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -290,14 +290,14 @@
 			};
 			name = Debug;
 		};
-		ECA29C812D37F0A700AB64F3 /* Release */ = {
+		ECA29B812D37F0A700AB64F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HelloWorldSample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CalculatorSample/Preview Content\"";
 				DEVELOPMENT_TEAM = 5XJ8CR95CK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -311,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.mh.HelloWorldSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.mh.CalculatorSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,20 +322,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ECA29C6C2D37F0A600AB64F3 /* Build configuration list for PBXProject "HelloWorldSample" */ = {
+		ECA29B6C2D37F0A600AB64F3 /* Build configuration list for PBXProject "CalculatorSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ECA29C7D2D37F0A700AB64F3 /* Debug */,
-				ECA29C7E2D37F0A700AB64F3 /* Release */,
+				ECA29B7D2D37F0A700AB64F3 /* Debug */,
+				ECA29B7E2D37F0A700AB64F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECA29C7F2D37F0A700AB64F3 /* Build configuration list for PBXNativeTarget "HelloWorldSample" */ = {
+		ECA29B7F2D37F0A700AB64F3 /* Build configuration list for PBXNativeTarget "CalculatorSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ECA29C802D37F0A700AB64F3 /* Debug */,
-				ECA29C812D37F0A700AB64F3 /* Release */,
+				ECA29B802D37F0A700AB64F3 /* Debug */,
+				ECA29B812D37F0A700AB64F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -343,18 +343,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		ECE1EE2D2DE7C39800E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */ = {
+		ECE1EE1D2DE7C39800E0F025 /* XCLocalSwiftPackageReference "../../../../v2" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../../../v2;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ECE1EE2E2DE7C39800E0F025 /* Mobile */ = {
+		ECE1EE1E2DE7C39800E0F025 /* Mobile */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Mobile;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = ECA29C692D37F0A600AB64F3 /* Project object */;
+	rootObject = ECA29B692D37F0A600AB64F3 /* Project object */;
 }

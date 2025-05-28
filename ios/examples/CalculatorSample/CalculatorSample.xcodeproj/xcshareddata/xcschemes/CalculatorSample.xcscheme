@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ECA29C702D37F0A600AB64F3"
-               BuildableName = "HelloWorldSample.app"
-               BlueprintName = "HelloWorldSample"
-               ReferencedContainer = "container:HelloWorldSample.xcodeproj">
+               BlueprintIdentifier = "ECA29B702D37F0A600AB64F3"
+               BuildableName = "CalculatorSample.app"
+               BlueprintName = "CalculatorSample"
+               ReferencedContainer = "container:CalculatorSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ECA29C702D37F0A600AB64F3"
-            BuildableName = "HelloWorldSample.app"
-            BlueprintName = "HelloWorldSample"
-            ReferencedContainer = "container:HelloWorldSample.xcodeproj">
+            BlueprintIdentifier = "ECA29B702D37F0A600AB64F3"
+            BuildableName = "CalculatorSample.app"
+            BlueprintName = "CalculatorSample"
+            ReferencedContainer = "container:CalculatorSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ECA29C702D37F0A600AB64F3"
-            BuildableName = "HelloWorldSample.app"
-            BlueprintName = "HelloWorldSample"
-            ReferencedContainer = "container:HelloWorldSample.xcodeproj">
+            BlueprintIdentifier = "ECA29B702D37F0A600AB64F3"
+            BuildableName = "CalculatorSample.app"
+            BlueprintName = "CalculatorSample"
+            ReferencedContainer = "container:CalculatorSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
