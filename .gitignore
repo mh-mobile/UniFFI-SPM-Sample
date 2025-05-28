@@ -117,9 +117,9 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
-# UniFFI generated files
-ios/src/Mobile/Mobile.swift
-ios/src/Mobile/mobileFFI.h
+# UniFFI generated files (SPM用に含める)
+# ios/src/Mobile/Mobile.swift
+# ios/src/Mobile/mobileFFI.h
 # ios/build/ # SPM用にXCFrameworkを含める
 
 # Build artifacts
