@@ -43,6 +43,33 @@ RustライブラリをXCFramework化し、Swift Package Managerから利用で�
 └── build-ios.sh           # ビルドスクリプト
 ```
 
+## Swift Package Managerでの使用方法
+
+### Xcodeプロジェクトに追加
+
+1. Xcodeでプロジェクトを開く
+2. **File** → **Add Package Dependencies** を選択
+3. 以下のURLを入力：
+   ```
+   https://github.com/mh-mobile/UniFFI-SPM-Sample.git
+   ```
+4. **Add Package** をクリック
+5. **Mobile** ライブラリを選択して **Add Package** をクリック
+
+### Package.swiftに追加
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/mh-mobile/UniFFI-SPM-Sample.git", branch: "main")
+],
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: ["Mobile"]
+    )
+]
+```
+
 ## 使用例
 
 ### Swift
