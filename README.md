@@ -4,6 +4,7 @@ RustライブラリをXCFramework化し、Swift Package Managerから利用で�
 
 ## 機能
 
+- **Greeting**: シンプルな挨拶メッセージ機能
 - **Calculator**: スレッドセーフな計算機能（Arc<Mutex>パターン）
 - **JWT Decoder**: エラーハンドリング付きのJWTデコード機能
 - **Cross-platform**: iOS、iOS Simulator、macOS対応
