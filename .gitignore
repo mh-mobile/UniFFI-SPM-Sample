@@ -120,4 +120,7 @@ fastlane/test_output
 # UniFFI generated files
 ios/src/Mobile/Mobile.swift
 ios/src/Mobile/mobileFFI.h
-ios/bin/
+ios/build/
+
+# Build artifacts
+repomix-output.xml

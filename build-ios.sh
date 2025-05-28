@@ -33,12 +33,12 @@ lipo -create \
    -output ./target/ios-simulator-universal/release/libmobile.a
 
 # Create XCFramework
-rm -rf "ios/bin/MobileCore.xcframework"
+rm -rf "ios/build/MobileCore.xcframework"
 xcodebuild -create-xcframework \
    -library  ./target/aarch64-apple-ios/release/libmobile.a -headers ./bindings \
    -library  ./target/ios-simulator-universal/release/libmobile.a -headers ./bindings \
    -library  ./target/aarch64-apple-darwin/release/libmobile.a -headers ./bindings \
-   -output "ios/bin/MobileCore.xcframework"
+   -output "ios/build/MobileCore.xcframework"
 
 # Cleanup
 rm -rf bindings

@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MobileCore",
-            path: "ios/bin/MobileCore.xcframework"
+            path: "ios/build/MobileCore.xcframework"
         ),
         .target(
             name: "Mobile",
