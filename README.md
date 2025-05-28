@@ -1,4 +1,4 @@
-# UniFFI Mobile Library
+# UniFFI SPM Sample
 
 iOS/macOS向けのRustライブラリで、UniFFIを使用してSwiftバインディングを生成します。
 
@@ -60,6 +60,3 @@ let jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 let decoded = try decodeJwt(jwt: jwt)
 ```
 
-## 開発者向け
-
-詳細な開発ガイドラインは[CLAUDE.md](CLAUDE.md)を参照してください。
